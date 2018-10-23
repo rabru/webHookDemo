@@ -55,7 +55,8 @@
           "members": [{
             "servicePort": 80,
             "serverAddresses": [
-              "192.0.3.20"
+              "192.0.3.20",
+              "192.0.3.21"
             ]
           }]
         },
