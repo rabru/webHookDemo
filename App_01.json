@@ -26,7 +26,7 @@
                   "monitorType": "http",
                   "interval": 5,
                   "timeout": 16,
-                  "send": "HEAD /login.php HTTP/1.0\\r\\n\\r\\n",
+                  "send": "HEAD /login.php HTTP/1.0\\r\\n\\r\\n"
                 },
                 "web_pool2": {
                     "class": "Pool",
