@@ -37,16 +37,15 @@
           ],
           "members": [
             {
-              "servicePort": 8001,
+              "servicePort": 5080,
               "serverAddresses": [
-                "10.10.10.143"
+                "10.1.10.4"
               ]
             },
             {
-              "servicePort": 8002,
+              "servicePort": 5081,
               "serverAddresses": [
-                "10.10.10.144",
-                "10.10.10.145"
+                "10.1.10.4"
               ]
             }
           ]
