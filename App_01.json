@@ -31,7 +31,7 @@
                 "web_pool2": {
                     "class": "Pool",
                     "monitors": [
-                        "http"
+                        "DVWAmonitor"
                     ],
                     "members": [
                         {
