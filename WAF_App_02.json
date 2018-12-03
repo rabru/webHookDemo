@@ -1,0 +1,60 @@
+{
+  "class": "AS3",
+  "action": "deploy",
+  "persist": true,
+  "declaration": {
+    "class": "ADC",
+    "schemaVersion": "3.5.0",
+    "id": "5489432",
+    "label": "ASM App 2",
+    "remark": "ASM_policy_external_URL",
+    "controls": {
+      "class": "Controls",
+      "trace": true,
+      "logLevel": "debug"
+    },
+    "WAF_App_02": {
+      "class": "Tenant",
+      "HTTP_Service": {
+        "class": "Application",
+        "template": "http",
+        "serviceMain": {
+          "class": "Service_HTTP",
+          "virtualAddresses": [
+            "192.0.10.108"
+          ],
+          "snat": "auto",
+          "pool": "Pool1",
+          "policyWAF": {
+            "use": "My_ASM_Policy"
+          }
+        },
+        "Pool1": {
+          "class": "Pool",
+          "monitors": [
+            "http"
+          ],
+          "members": [
+            {
+              "servicePort": 8001,
+              "serverAddresses": [
+                "10.1.10.4"
+              ]
+            },
+            {
+              "servicePort": 8002,
+              "serverAddresses": [
+                "10.1.10.4"
+              ]
+            }
+          ]
+        },
+        "My_ASM_Policy": {
+          "class": "WAF_Policy",
+          "url": "https://raw.githubusercontent.com/rabru/WAF_policy/master/basic_waf_utf-8_v13_1__2018-10-23_12-42-41.xml",
+          "ignoreChanges": true
+        }
+      }
+    }
+  }
+}
