@@ -41,12 +41,6 @@
               "serverAddresses": [
                 "10.1.10.4"
               ]
-            },
-            {
-              "servicePort": 5081,
-              "serverAddresses": [
-                "10.1.10.4"
-              ]
             }
           ]
         },
