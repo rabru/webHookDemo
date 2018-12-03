@@ -26,7 +26,7 @@
           "snat": "auto",
           "pool": "Pool1",
           "policyWAF": {
-            "use": "My_ASM_Policy"
+            "use": "Basic_WAF_Policy"
           }
         },
         "Pool1": {
@@ -49,7 +49,7 @@
             }
           ]
         },
-        "My_ASM_Policy": {
+        "Basic_WAF_Policy": {
           "class": "WAF_Policy",
           "url": "https://raw.githubusercontent.com/rabru/WAF_policy/master/basic_waf_utf-8_v13_1__2018-12-3_11-56-17.xml",
           "ignoreChanges": true
