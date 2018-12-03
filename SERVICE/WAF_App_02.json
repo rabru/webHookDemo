@@ -34,13 +34,14 @@
           {
             "servicePort": 8001,
             "serverAddresses": [
-              "10.1.10.4"
+              "10.10.10.143"
             ]
           },
           {
             "servicePort": 8002,
             "serverAddresses": [
-              "10.1.10.4"
+              "10.10.10.144",
+              "10.10.10.145"
             ]
           }
         ]
