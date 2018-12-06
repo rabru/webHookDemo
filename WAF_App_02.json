@@ -42,7 +42,7 @@
               ]
             },
             {
-              "servicePort": 8003,
+              "servicePort": 8002,
               "serverAddresses": [
                 "10.0.10.4"
               ]
